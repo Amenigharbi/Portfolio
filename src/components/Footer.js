@@ -1,22 +1,22 @@
-import React from 'react';
-
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <p>&copy; 2024 Ameni Gharbi. Tous droits réservés.</p>
-          <div className="social-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              Twitter
-            </a>
+          <div className="footer-section">
+            <p className="copyright">
+              © {currentYear} Ameni Gharbi. Tous droits réservés.
+            </p>
+            <p className="tagline">
+              Développeuse passionnée • Créative • Innovante
+            </p>
           </div>
+        </div>
+        
+        <div className="footer-bottom">
+          <p>Fait avec ❤️ et beaucoup de ☕</p>
         </div>
       </div>
     </footer>

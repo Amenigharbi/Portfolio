@@ -13,18 +13,23 @@ const Contact = () => {
             </p>
             <div className="contact-details">
               <div className="contact-item">
-                <strong>Email:</strong> ameni.gharbi@email.com
+                <strong>Email:</strong> gharbiameni17@gmail.com
               </div>
               <div className="contact-item">
-                <strong>Téléphone:</strong> +216 XX XXX XXX
+                <strong>Téléphone:</strong> +216 27478047
               </div>
               <div className="contact-item">
-                <strong>LinkedIn:</strong> linkedin.com/in/ameni-gharbi
+                <strong>LinkedIn:</strong> https://www.linkedin.com/in/ameni-gharbi123
               </div>
               <div className="contact-item">
-                <strong>GitHub:</strong> github.com/ameni-gharbi
+                <strong>GitHub:</strong> https://github.com/Amenigharbi
+              </div>
+                <div className="contact-item">
+                <strong>Gitlab:</strong>  https://gitlab.com/gharbiameni17
               </div>
             </div>
+
+           
           </div>
           
      
