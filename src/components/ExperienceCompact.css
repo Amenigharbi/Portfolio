@@ -1,0 +1,490 @@
+/* ===== EXPERIENCE SECTION LARGE - CONTENU À GAUCHE ===== */
+.experience-compact {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  color: white;
+  overflow: hidden;
+}
+
+/* Arrière-plan animé */
+.experience-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(102, 126, 234, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(102, 126, 234, 0.1) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.experience-header-compact {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title-compact {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.title-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.title-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.experience-subtitle-compact {
+  font-size: 1.3rem;
+  color: #94a3b8;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+}
+
+/* Timeline verticale avec contenu à gauche */
+.timeline-compact {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-compact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 200px; /* Ligne décalée à gauche */
+  width: 3px;
+  background: linear-gradient(180deg, 
+    transparent 0%, 
+    #667eea 10%, 
+    #764ba2 50%, 
+    #667eea 90%, 
+    transparent 100%);
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.4);
+}
+
+.timeline-item-compact {
+  position: relative;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: stretch;
+  min-height: 200px;
+}
+
+.timeline-item-compact.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* TOUTES les expériences alignées à gauche */
+.timeline-item-compact {
+  padding-left: 200px; /* Espace pour la ligne timeline */
+  padding-right: 0;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+/* Marqueur timeline à gauche */
+.timeline-marker-compact {
+  position: absolute;
+  top: 50%;
+  left: 197px; /* Aligné avec la ligne */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 4px solid #0f172a;
+  box-shadow: 
+    0 0 0 3px rgba(102, 126, 234, 0.5),
+    0 4px 15px rgba(102, 126, 234, 0.4);
+  z-index: 3;
+  transition: all 0.3s ease;
+  transform: translateY(-50%);
+}
+
+.timeline-item-compact:hover .timeline-marker-compact {
+  transform: translateY(-50%) scale(1.2);
+  box-shadow: 
+    0 0 0 4px rgba(102, 126, 234, 0.7),
+    0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Carte de contenu LARGE à gauche */
+.timeline-content-compact {
+  background: linear-gradient(135deg, 
+    rgba(30, 41, 59, 0.95) 0%, 
+    rgba(15, 23, 42, 0.95) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  max-width: 1000px;
+  min-height: auto;
+  margin-left: 40px; /* Espace après la ligne */
+  margin-right: 0;
+}
+
+.timeline-content-compact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.timeline-content-compact:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.timeline-content-compact:hover::before {
+  transform: scaleX(1);
+}
+
+/* En-tête aligné à gauche */
+.experience-header-mini {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.experience-title-mini {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: left;
+}
+
+.experience-company-mini {
+  font-size: 1.3rem;
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.experience-company-mini::before {
+  content: '🏢';
+  font-size: 1.1rem;
+}
+
+.experience-period-mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  color: #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+/* Description alignée à gauche */
+.experience-description-compact {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.experience-description-compact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem 2rem;
+  text-align: left;
+}
+
+.experience-description-compact li {
+  position: relative;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  text-align: left;
+}
+
+.experience-description-compact li:hover {
+  color: #e2e8f0;
+}
+
+.experience-description-compact li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.experience-description-compact li:hover::before {
+  transform: translateX(3px);
+  color: #764ba2;
+}
+
+/* Technologies alignées à gauche */
+.experience-technologies-compact {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.tech-tags-compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: flex-start;
+}
+
+.tech-tag-compact {
+  background: linear-gradient(135deg, 
+    rgba(102, 126, 234, 0.15) 0%, 
+    rgba(118, 75, 162, 0.15) 100%);
+  color: #93c5fd;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-tag-compact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(102, 126, 234, 0.2), 
+    transparent);
+  transition: left 0.5s ease;
+}
+
+.tech-tag-compact:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, 
+    rgba(102, 126, 234, 0.25) 0%, 
+    rgba(118, 75, 162, 0.25) 100%);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  color: #bfdbfe;
+}
+
+.tech-tag-compact:hover::before {
+  left: 100%;
+}
+
+/* Badge aligné à gauche */
+.experience-badge-compact {
+  padding: 0.6rem 1.2rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  min-width: 100px;
+  text-align: center;
+}
+
+.badge-current-compact {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.badge-past-compact {
+  background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+  color: #f1f5f9;
+}
+
+.experience-badge-compact:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1400px) {
+  .timeline-content-compact {
+    width: 85%;
+    padding: 2rem 2.5rem;
+  }
+  
+  .experience-description-compact ul {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .timeline-compact::before {
+    left: 150px;
+  }
+  
+  .timeline-item-compact {
+    padding-left: 150px;
+  }
+  
+  .timeline-marker-compact {
+    left: 147px;
+  }
+  
+  .timeline-content-compact {
+    width: 80%;
+    padding: 2rem;
+    margin-left: 30px;
+  }
+  
+  .experience-title-mini {
+    font-size: 1.4rem;
+  }
+  
+  .experience-company-mini {
+    font-size: 1.1rem;
+  }
+  
+  .experience-description-compact ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-compact {
+    padding: 60px 0;
+  }
+  
+  .section-title-compact {
+    font-size: 2.5rem;
+  }
+  
+  .timeline-compact::before {
+    left: 30px;
+  }
+  
+  .timeline-item-compact {
+    padding-left: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+  }
+  
+  .timeline-marker-compact {
+    top: 2rem;
+    left: 21px;
+    transform: translateY(0);
+  }
+  
+  .timeline-content-compact {
+    width: 100%;
+    margin-left: 20px;
+    padding: 1.5rem;
+  }
+  
+  .experience-header-mini {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title-compact {
+    font-size: 2rem;
+  }
+  
+  .timeline-content-compact {
+    padding: 1.2rem;
+    margin-left: 15px;
+  }
+  
+  .experience-title-mini {
+    font-size: 1.2rem;
+  }
+  
+  .experience-description-compact li {
+    font-size: 0.9rem;
+    padding: 0.4rem 0 0.4rem 1.2rem;
+  }
+  
+  .tech-tags-compact {
+    gap: 0.5rem;
+  }
+  
+  .tech-tag-compact {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

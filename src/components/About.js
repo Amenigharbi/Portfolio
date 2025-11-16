@@ -42,22 +42,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="stats-grid">
-                <div className="stat-card">
-                  <div className="stat-icon">💼</div>
-                  <div className="stat-content">
-                    <span className="stat-number">3+</span>
-                    <span className="stat-label">Ans d'expérience</span>
-                  </div>
-                </div>
-                <div className="stat-card">
-                  <div className="stat-icon">🚀</div>
-                  <div className="stat-content">
-                    <span className="stat-number">50+</span>
-                    <span className="stat-label">Projets réalisés</span>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
 

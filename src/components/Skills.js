@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-
+import { useEffect, useRef, useState } from 'react';
+import './Skills.css'
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeCategory, setActiveCategory] = useState('Tous');
@@ -143,6 +143,14 @@ const Skills = () => {
       category: 'DevOps',
       description: 'Infrastructure cloud et services managés'
     },
+     { 
+    name: 'Jenkins', 
+    level: 78,
+    icon: '⚙️',
+    color: '#d24939',
+    category: 'DevOps',
+    description: 'Automatisation CI/CD et orchestration de pipelines de déploiement'
+  },
     // Tools
     { 
       name: 'Git/GitHub', 
@@ -400,40 +408,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Légende améliorée */}
-        <div className="skills-legend-modern">
-          <div className="legend-title">Échelle de compétence</div>
-          <div className="legend-items">
-            <div className="legend-item">
-              <div className="legend-color beginner"></div>
-              <div className="legend-info">
-                <span className="legend-level">Débutant</span>
-                <span className="legend-range">0-40%</span>
-              </div>
-            </div>
-            <div className="legend-item">
-              <div className="legend-color intermediate"></div>
-              <div className="legend-info">
-                <span className="legend-level">Intermédiaire</span>
-                <span className="legend-range">40-70%</span>
-              </div>
-            </div>
-            <div className="legend-item">
-              <div className="legend-color advanced"></div>
-              <div className="legend-info">
-                <span className="legend-level">Avancé</span>
-                <span className="legend-range">70-90%</span>
-              </div>
-            </div>
-            <div className="legend-item">
-              <div className="legend-color expert"></div>
-              <div className="legend-info">
-                <span className="legend-level">Expert</span>
-                <span className="legend-range">90-100%</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Section spéciale DevOps */}
         <div className="devops-highlight">

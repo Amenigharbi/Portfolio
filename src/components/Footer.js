@@ -14,10 +14,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        
-        <div className="footer-bottom">
-          <p>Fait avec ❤️ et beaucoup de ☕</p>
-        </div>
+
       </div>
     </footer>
   );
