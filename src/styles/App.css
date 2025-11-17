@@ -1403,11 +1403,7 @@ body {
     gap: 3rem;
     text-align: center;
   }
-  
-  .hero-title {
-    font-size: 3rem;
-  }
-  
+
   .hero-subtitle {
     font-size: 1.4rem;
     justify-content: center;
@@ -1499,10 +1495,6 @@ body {
 
   .menu-toggle span {
     width: 20px;
-  }
-  
-  .hero-title {
-    font-size: 2.5rem;
   }
   
   .hero-subtitle {
