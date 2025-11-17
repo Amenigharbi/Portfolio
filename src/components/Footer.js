@@ -1,3 +1,4 @@
+import './Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <p className="copyright">
-              © {currentYear} Ameni Gharbi. Tous droits réservés.
+              © {currentYear} Ameni Gharbi
             </p>
             <p className="tagline">
               Développeuse passionnée • Créative • Innovante
@@ -15,6 +16,9 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="footer-bottom">
+          <p>Développé avec ❤️ en Tunisie</p>
+        </div>
       </div>
     </footer>
   );

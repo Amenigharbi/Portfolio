@@ -139,7 +139,7 @@ const Projects = () => {
       <div className="container">
         <div className="projects-header">
           <h2 className="section-title-modern">
-            Mes <span className="title-gradient">Projets</span>
+           <span className="title-gradient">  Mes Projets</span>
           </h2>
           <p className="projects-subtitle">
             Découvrez une sélection de mes réalisations techniques et créatives

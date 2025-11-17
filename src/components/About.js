@@ -1,4 +1,4 @@
-
+import './About.css';
 const About = () => {
   return (
     <section id="apropos" className="about-modern">
@@ -21,30 +21,7 @@ const About = () => {
         </div>
 
         <div className="about-content-modern">
-          <div className="about-card-main">
-            <div className="about-intro">
-              <div className="intro-text">
-                <h3 className="intro-title">
-                  Ingénieure en <span>Génie Logiciel</span> Passionnée
-                </h3>
-                <div className="intro-description">
-                  <p>
-                    Avec une expertise solide dans le développement d'applications 
-                    <span className="accent"> web et mobiles modernes</span>, je mets 
-                    mes compétences au service de projets innovants et ambitieux.
-                  </p>
-                  <p>
-                    Mon objectif est de créer des solutions logicielles 
-                    <span className="accent"> efficaces et évolutives</span> qui 
-                    répondent parfaitement aux besoins des utilisateurs tout en 
-                    maintenant des standards de qualité exceptionnels.
-                  </p>
-                </div>
-              </div>
-
-             
-            </div>
-          </div>
+      
 
           <div className="about-grid">
             <div className="info-card education-card">
@@ -52,12 +29,28 @@ const About = () => {
                 <div className="card-icon">🎓</div>
                 <h4 className="card-title">Éducation</h4>
               </div>
-              <div className="card-content">
-                <h5 className="card-subtitle">Ingénieur en Génie Logiciel</h5>
-                <p className="card-description">
-                  Diplômée avec mention, spécialisée en développement 
-                  d'applications modernes et architectures cloud.
-                </p>
+              <div className="card-content-horizontal">
+                <div className="card-main-info">
+                  <h5 className="card-subtitle">Ingénieur en Génie Logiciel</h5>
+                  <p className="card-description">
+                    Diplômée avec mention bien, spécialisée en développement 
+                    d'applications modernes et architectures cloud.
+                  </p>
+                </div>
+                <div className="card-additional-info">
+                  <div className="info-item">
+                    <span className="info-label">Année</span>
+                    <span className="info-value">2025</span>
+                  </div>
+                  <div className="info-item">
+                    <span className="info-label">École</span>
+                    <span className="info-value">Issat Sousse</span>
+                  </div>
+                  <div className="info-item">
+                    <span className="info-label">Mention</span>
+                    <span className="info-value">Bien</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -66,11 +59,28 @@ const About = () => {
                 <div className="card-icon">📍</div>
                 <h4 className="card-title">Localisation</h4>
               </div>
-              <div className="card-content">
-                <h5 className="card-subtitle">Sousse, Tunisie</h5>
-                <p className="card-description">
-                  Ouverte aux opportunités en remote et sur site.
-                </p>
+              <div className="card-content-horizontal">
+                <div className="card-main-info">
+                  <h5 className="card-subtitle">Sousse, Tunisie</h5>
+                  <p className="card-description">
+                    Ouverte aux opportunités en remote, hybride et sur site. 
+                    Mobilité nationale et internationale.
+                  </p>
+                </div>
+                <div className="card-additional-info">
+                  <div className="info-item">
+                    <span className="info-label">Pays</span>
+                    <span className="info-value">Tunisie</span>
+                  </div>
+                  <div className="info-item">
+                    <span className="info-label">Ville</span>
+                    <span className="info-value">Sousse</span>
+                  </div>
+                  <div className="info-item">
+                    <span className="info-label">Remote</span>
+                    <span className="info-value">Oui</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -79,15 +89,30 @@ const About = () => {
                 <div className="card-icon">✅</div>
                 <h4 className="card-title">Disponibilité</h4>
               </div>
-              <div className="card-content">
-                <h5 className="card-subtitle">Ouverte aux opportunités</h5>
-                <p className="card-description">
-                  Recherche active de nouveaux défis et projets 
-                  innovants dans le domaine du développement.
-                </p>
+              <div className="card-content-horizontal">
+                <div className="card-main-info">
+                  <h5 className="card-subtitle">Ouverte aux opportunités</h5>
+                  <p className="card-description">
+                    Recherche active de nouveaux défis et projets 
+                    innovants dans le domaine du développement full-stack.
+                  </p>
+                </div>
+                <div className="card-additional-info">
+                  <div className="info-item">
+                    <span className="info-label">Statut</span>
+                    <span className="info-value">Disponible</span>
+                  </div>
+                  <div className="info-item">
+                    <span className="info-label">Type</span>
+                    <span className="info-value">CDI/Freelance</span>
+                  </div>
+                  <div className="info-item">
+                    <span className="info-label">Début</span>
+                    <span className="info-value">Immédiat</span>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
 
           <div className="values-section">
@@ -98,7 +123,7 @@ const About = () => {
                 <h4 className="value-name">Innovation</h4>
                 <p className="value-description">
                   Toujours à la recherche des dernières technologies 
-                  et meilleures pratiques.
+                  et meilleures pratiques pour des solutions modernes.
                 </p>
               </div>
               <div className="value-item">
@@ -106,7 +131,7 @@ const About = () => {
                 <h4 className="value-name">Performance</h4>
                 <p className="value-description">
                   Code optimisé et applications rapides pour une 
-                  expérience utilisateur exceptionnelle.
+                  expérience utilisateur exceptionnelle et fluide.
                 </p>
               </div>
               <div className="value-item">
@@ -114,7 +139,7 @@ const About = () => {
                 <h4 className="value-name">Qualité</h4>
                 <p className="value-description">
                   Respect des standards et bonnes pratiques pour 
-                  un code maintenable et robuste.
+                  un code maintenable, robuste et sécurisé.
                 </p>
               </div>
               <div className="value-item">
@@ -122,7 +147,7 @@ const About = () => {
                 <h4 className="value-name">Collaboration</h4>
                 <p className="value-description">
                   Travail d'équipe et communication efficace pour 
-                  atteindre les objectifs communs.
+                  atteindre les objectifs communs avec succès.
                 </p>
               </div>
             </div>

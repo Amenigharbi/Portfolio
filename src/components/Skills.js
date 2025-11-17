@@ -233,7 +233,7 @@ const Skills = () => {
       <div className="container">
         <div className="skills-header">
           <h2 className="section-title-modern">
-            Mes <span className="title-gradient">Compétences</span>
+            <span className="title-gradient">Mes Compétences</span>
           </h2>
           <p className="skills-subtitle">
             Un panorama complet de mes expertises techniques en développement et DevOps

@@ -22,9 +22,6 @@ const Hero = () => {
 
       <div className="container">
         <div className="hero-content">
-          <div className="professional-badge">
-            <span>👋 Bonjour, je suis</span>
-          </div>
           
           <h1 className="hero-title">
             <span className="title-main">Ameni</span>
