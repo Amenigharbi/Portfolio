@@ -25,7 +25,7 @@ const Hero = () => {
           
           <h1 className="hero-title">
             <span className="title-main">Ameni</span>
-            <span className="title-accent">Gharbi</span>
+            <span className="title-accent"> Gharbi</span>
           </h1>
           
           <h2 className="hero-subtitle">

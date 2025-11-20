@@ -4,9 +4,19 @@ import './Projects.css';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('Tous');
 
-  const projects = [
+const projects = [
     {
       id: 1,
+      title: 'HealthFlow - Plateforme de Santé Digitale',
+      description: 'Une plateforme médicale complète permettant aux patients et professionnels de santé de gérer les rendez-vous, dossiers médicaux et consultations en ligne. Système d\'authentification sécurisé avec rôles multiples (PATIENT/DOCTOR), interface moderne avec design glassmorphism et animations fluides.',
+      technologies: ['Next.js 14', 'TypeScript', 'NextAuth', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'Zod', 'React Hook Form'],
+      github: 'https://github.com/Amenigharbi/HealthFlow-Plateforme-de-Telemedecine-et-Gestion-de-Sante-Digitale',
+      category: 'Fullstack',
+      image: '/api/placeholder/400/250',
+      featured: true
+    },
+    {
+      id: 2,
       title: 'Plateforme de Collaboration Scientifique',
       description: 'Un écosystème numérique complet conçu pour révolutionner la façon dont les chercheurs, universitaires et scientifiques collaborent entre institutions et disciplines. Cette plateforme comble les distances géographiques et facilite le partage des connaissances au sein de la communauté scientifique grâce à des technologies de communication en temps réel.',
       technologies: ['NextJs', 'MongoDB', 'WebSocket', 'JWT et OAuth'],
@@ -16,7 +26,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 2,
+      id: 3,
       title: 'Application web Ecommerce multi-vendeurs et multi-partenaires',
       description: 'Une plateforme B2B innovante connectant les petits détaillants et restaurants avec des fournisseurs et partenaires multiples. Cette solution digitale optimise la supply chain tout en garantissant une sécurité renforcée grâce aux pratiques DevSecOps.',
       technologies: ['NextJs', 'ReactJs', 'MongoDB', 'GitlabCi', 'Docker', 'Sonarqube','Trivy','Gitleaks','Prometheus','Grafana','Ansible'],
@@ -26,7 +36,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 3,
+      id: 4,
       title: 'Application Mobile de Messagerie Instantanée',
       description: 'Une application mobile de messagerie instantanée sécurisée et performante, inspirée de WhatsApp, offrant une communication en temps réel avec une expérience utilisateur optimale.',
       technologies: ['React Native', 'Firebase'],
@@ -35,7 +45,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Système de Réservation Hôtelière - Architecture Microservices',
       description: 'Une plateforme de réservation hôtelière scalable construite avec une architecture microservices utilisant Spring Boot et API Gateway, intégrant des pratiques DevOps complètes',
       technologies: ['SpringBoot', 'Spring Security', 'JWT', 'Docker', 'Sonarqube', 'GitlabCi','Aws','Kubernetes'],
@@ -44,7 +54,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Plateforme Universitaire - Architecture Spring Boot Avancée',
       description: 'Une plateforme universitaire complète exploitant les architectures modernes avec Spring Boot, CQRS, Kafka et AOP pour une gestion scalable des processus académiques.',
       technologies: ['SpringBoot', 'Kafka', 'CQRS', 'AOP', 'MySQL', 'Docker'],
@@ -53,7 +63,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Site web vitrine Royalty Marketing',
       description: 'Architecture microservices avec gestion d\'authentification, service de notification et gateway API. Déploiement Kubernetes.',
       technologies: ['Html', 'css', 'Js', 'Docker'],
@@ -62,7 +72,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
      {
-      id: 7,
+      id: 8,
       title: 'Site web Les délices de madame Gharbi',
       description: 'Les Délices de Madame Gharbi est une plateforme élégante dédiée à la présentation des créations pâtissières exceptionnelles de Madame Gharbi, mettant en valeur son savoir-faire unique et son univers gourmand..',
       technologies: ['html', 'css', 'js', 'JQuery','Docker'],
@@ -71,7 +81,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
      {
-      id: 8,
+      id: 9,
       title: 'Boutique Solidaire',
       description: 'Une plateforme e-commerce innovante qui valorise le talent créatif des personnes handicapées en commercialisant leurs créations vestimentaires uniques.',
       technologies: ['ReactJs', 'NodeJs', 'Mongodb'],
@@ -80,7 +90,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
      {
-      id: 9,
+      id: 10,
       title: 'Jeu Puissance 4',
       description: 'Puissance 4 est une implémentation en Python du jeu de stratégie classique où deux joueurs s\'affrontent pour aligner 4 pions horizontalement, verticalement ou en diagonale.',
       technologies: ['Python'],
@@ -89,7 +99,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
     {
-      id: 10,
+      id: 11,
       title: ' Application Web de Gestion Administrative - ENOVA Robotics',
       description: 'Plateforme de gestion administrative pour ENOVA Robotics permettant de superviser l\'ensemble des robots, interventions, maintenance et performances en temps réel..',
       technologies: ['NextJs','MongoDb'],
@@ -97,9 +107,8 @@ const Projects = () => {
       category: 'Fullstack',
       image: '/api/placeholder/400/250'
     },
-
      {
-      id: 11,
+      id: 12,
       title: ' Application E-commerce Magento 2 - Parfums de Femmes',
       description: 'Boutique en ligne spécialisée dans la vente de parfums féminins de luxe, offrant une expérience d\'achat premium et personnalisée.',
       technologies: ['Magento2','PHP','MySQL','Docker','n8n'],
@@ -108,7 +117,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250'
     },
      {
-      id: 12,
+      id: 13,
       title: 'Projet Blog Littéraire - Plateforme de Partage de Livres d\'Auteurs',
       description: 'Blog Littéraire Collaboratif permettant aux auteurs de partager leurs œuvres, chapitres et réflexions, tout en créant une communauté de lecteurs engagés.',
       technologies: ['Angular','NodeJs','ExpressJs','MongoDb'],
@@ -116,8 +125,7 @@ const Projects = () => {
       category: 'Fullstack',
       image: '/api/placeholder/400/250'
     },
-   
-  ];
+];
 
   const categories = ['Tous', ...new Set(projects.map(project => project.category))];
   
@@ -146,7 +154,6 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Filtres par catégorie */}
         <div className="projects-filters">
           {categories.map(category => (
             <button
@@ -162,14 +169,12 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Grille des projets */}
         <div className="projects-grid-modern">
           {filteredProjects.map(project => (
             <div 
               key={project.id} 
               className={`project-card ${project.featured ? 'featured' : ''}`}
             >
-              {/* Image du projet */}
               <div className="project-image">
                 <div className="image-placeholder">
                   <span>🎨</span>
@@ -196,7 +201,6 @@ const Projects = () => {
                 )}
               </div>
 
-              {/* Contenu du projet */}
               <div className="project-content">
                 <div className="project-category">
                   {project.category}
@@ -204,7 +208,6 @@ const Projects = () => {
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 
-                {/* Technologies utilisées */}
                 <div className="project-technologies">
                   {project.technologies.map((tech, index) => (
                     <span 
@@ -216,7 +219,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Actions du projet */}
                 <div className="project-links">
                   <a 
                     href={project.github} 
@@ -233,7 +235,6 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Call-to-action */}
         <div className="projects-cta">
           <div className="cta-content">
             <h3>Intéressé par une collaboration ?</h3>
